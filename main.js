@@ -1,6 +1,7 @@
 const burger = document.querySelector(".burger");
 const navMenu = document.querySelector(".nav-menu");
-const overlay = document.querySelector(".overlay");
+const navLink = document.querySelector(".nav-link");
+
 
 burger.onclick = function () {
     burger.classList.toggle("active");
@@ -8,7 +9,7 @@ burger.onclick = function () {
 
 
 burger.addEventListener("click", () => {
-    
+
     navMenu.classList.toggle("active");
-    overlay.classList.toggle("active");
+    navLink.classList.toggle("mobile-menu");
 });
